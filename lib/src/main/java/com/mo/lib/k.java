@@ -1,0 +1,75 @@
+package com.mo.lib;
+
+import android.annotation.SuppressLint;
+import android.app.Application;
+import android.content.Context;
+
+
+import com.mo.lib.modle.inject.ViewInjector;
+import com.mo.lib.utils.activity_utils.ActivityStackManager;
+import com.mo.lib.utils.dataUtil.CacheUtils.MmkvUtils;
+
+import java.lang.reflect.Method;
+
+/**
+ * @ author：mo
+ * @ data：2020/7/20:10:10
+ * @ 功能：
+ */
+public final class k {
+    /**
+     * 项目的整体上下文环境
+     *
+     * @return
+     */
+    public static Application app() {
+        if (Ext.app == null) {
+            try {
+                // 在IDE进行布局预览时使用
+                @SuppressLint("PrivateApi") Class<?> renderActionClass = Class.forName("com.android.layoutlib.bridge.impl.RenderAction");
+                Method method = renderActionClass.getDeclaredMethod("getCurrentContext");
+                Context context = (Context) method.invoke(null);
+                Ext.app = new MockApplication(context);
+            } catch (Throwable ignored) {
+                throw new RuntimeException("在manifest注册Application，并且在Application#onCreate()方法里 x.Ext.init(app) ");
+            }
+        }
+        return Ext.app;
+    }
+
+    public static boolean isDebug() {
+        return Ext.debug;
+    }
+
+    public static class Ext {
+
+        private static Application app;
+        private static boolean debug = true;
+        private static ViewInjector viewInjector;
+
+        private Ext() {
+        }
+
+        public static void init(Application app) {
+            if (Ext.app == null) {
+                Ext.app = app;
+            }
+            MmkvUtils.initMmkv();
+            ActivityStackManager.getInstance().init(Ext.app);
+        }
+
+        public static void setDebug(boolean debug) {
+            Ext.debug = debug;
+        }
+
+        public static void setViewInjector(ViewInjector viewInjector) {
+            Ext.viewInjector = viewInjector;
+        }
+    }
+
+    private static class MockApplication extends Application {
+        public MockApplication(Context baseContext) {
+            this.attachBaseContext(baseContext);
+        }
+    }
+}

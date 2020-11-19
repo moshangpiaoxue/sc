@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_camera_take"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="63dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@mipmap/camera_take" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_camera_back"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="11dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/fanhui1" />
+</FrameLayout>

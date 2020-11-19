@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:orientation="vertical" android:layout_width="match_parent"--><!--android:layout_height="match_parent">--><!--&lt;!&ndash;<com.mo.libsx.view.bezier_view.LineView2&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/tree"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;--><!--&lt;!&ndash;<com.mo.libsx.view.test_view.MyView1&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/tree"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;--><!--&lt;!&ndash;<com.mo.libsx.view.test_view.AnimatorView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/tree"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;--><!--&lt;!&ndash;<com.mo.libsx.view.test_view.BallLoading&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="match_parent" />&ndash;&gt;--><!--</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="aaaaaaaaa" />
+
+    <com.mo.lib.view.test_view.MyView3
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--<com.mo.libsx.view.test_view.BallLoading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:ignore="MissingConstraints" />-->
+
+</LinearLayout>

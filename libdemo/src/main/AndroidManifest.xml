@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mo.libdemo">
+
+    <application android:theme="@style/AppTheme"
+        android:name="com.mo.lib.base.BaseApplication"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.mo.libdemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mo.libdemo.activitys.widget.WidgetsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.TextViewsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.SlantedTextViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.CornerTextViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.ExpandableTextViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.BadgeTextViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.AnimationEffectsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.bubble.BubblesActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.bubble.CircleBubbleActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.bubble.IconBubbleActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.text_view.CreditsRollTextViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.floating.FloatingActivity" />
+        <activity android:name="com.mo.libdemo.activitys.animation_effect.snow.SnowActivity" />
+        <activity android:name="com.mo.libdemo.activitys.function.TakePhotoActivity" />
+        <activity android:name="com.mo.libdemo.activitys.function.FunctionsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.edit_view.EditsViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.image_view.ImagesViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.progress_bar.ProgressBarsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.list.ListsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.function.SignatureViewActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.view_switcher.ViewSwitcherActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.viewpage.ViewPagesActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.viewpage.KViewPageActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.popwindow.PopWindowsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.function.ScanActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.data_picker.DataPickerActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.data_picker.DefDataPickerActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.data_picker.PickViewActivity" />
+
+        <activity android:name="com.mo.libdemo.activitys.widget.list.CityPickerActivity2">
+
+        </activity>
+        <activity android:name="com.mo.libdemo.activitys.widget.list.BRVAHActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.dialog.DialogsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.index.IndexViewsActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.keyboard.KeyBoardActivity" />
+        <activity android:name="com.mo.libdemo.activitys.widget.mpchart.MPAndroidChartActivity" />
+    </application>
+</manifest>
